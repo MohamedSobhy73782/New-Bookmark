@@ -1,0 +1,80 @@
+body
+{
+   background-image: url(../textured-metal-background.jpg);
+   background-position: center center ;
+   background-size: cover;
+   background-attachment: fixed;
+
+   
+}
+
+.main h1 {
+    font-size: 50px;
+    font-family: "Pacifico", cursive;
+    font-weight: 700;
+    font-style: italic;
+    color: #fff;
+    isolation: isolate;
+
+    border-width: 0px 0 2px 0;
+    border-style: dotted;
+    border-color: #fff;
+    width: 80%;
+    margin: auto;
+
+}
+
+.main h1::before
+{
+
+    content: "";
+    position: absolute;
+    width: 26%;
+    height: 30%;
+    left: 405px;
+    bottom: 54px;
+    background-color: gray;
+    transition: height 350ms;
+    z-index: -1;
+ 
+}
+
+.main h1:hover::before
+{
+    height: 45%;
+}
+ 
+.container 
+{
+    border-width: 0px 0 2px 0;
+    border-style: dotted;
+    border-color: #fff;
+    background-color: rgba(128, 128, 128, 0.2);
+    border-radius: 20px;
+    border-radius: 5px solid transparent;
+
+
+}
+
+.container h2
+{
+
+    font-family: "Righteous", cursive;
+    font-size: 25px;
+    background-image: linear-gradient( gray, rgba(128, 128, 128, 0.041));
+    letter-spacing: 5x;
+    color: #fff;
+
+}
+
+.container  h6
+{
+    color: #fff;
+}
+
+
+.form-control:focus {
+    background-color: #fff;
+    border-color: gray ;
+    box-shadow: 0 0 0 2px burlywood;
+  }

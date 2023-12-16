@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title>Bookmark</title>
+  <link rel="icon" href="../Assignment/bookmark.png" />
+  <link rel="stylesheet" href="CSS/bootstrap.min.css">
+  <link rel="stylesheet" href="CSS/all.min.css">
+  <link rel="stylesheet" href="CSS/style.css">
+
+
+</head>
+
+<body>
+
+  <div class="main m-auto text-center pt-5">
+
+
+    <h1 class="pb-5 position-relative"> Bookmarker </h1>
+
+  </div>
+
+
+  <div class=" container text-center  ">
+
+  
+    <h2 class="m-5 pb-2 ">
+      <i class="fa-solid fa-bookmark"></i>
+      Bookmark your favorite sites
+      <i class="fa-solid fa-bookmark"></i>
+    </h2>
+
+    <h6 class="fw-bold d-flex">
+      <i class="fw-bold fa-solid fa-book-bookmark ms-2 pe-2"></i>
+      Site Name
+    </h6>
+    <input id="bookmarkName" class="text-bg-secondary  border-3 form-control mb-3" type="text" placeholder="Bookmark Name">
+
+    <h6 class="fw-bold d-flex">
+      <i class="fw-bold fa-solid fa-link ms-2 pe-2"></i>
+      Site URL
+    </h6>
+    <input id="siteUrl" class=" text-bg-secondary border-3 form-control mb-3" type="text" placeholder="Website URL "  >
+
+  <button onclick="getData()" class="btn btn-secondary px-5 m-4  ">Submit</button>
+
+
+  </div>
+
+
+
+  <div class="container text-center  px-0 my-5">
+
+    <table class="table">
+
+      <thead>
+
+        <th class="text-bg-secondary">Index</th>
+        <th class="text-bg-dark" >Website Name	</th>
+        <th class="text-bg-secondary">Visit</th>
+        <th class="text-bg-dark">Delete</th>
+      </thead>
+
+
+        <tbody id="tbody">
+
+        </tbody>
+
+    </table>
+
+  </div>  
+
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>
+
+
